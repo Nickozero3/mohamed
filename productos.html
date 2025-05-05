@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cellstore</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <link rel="shortcut icon" href="apple.ico" type="image/x-icon">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="logo"><i class="fab fa-apple" style="font-size: 32px;"><span class="mi-texto"> Cellstore</span></i>
+ </div>
+
+
+  <!-- Botón del menú hamburguesa -->
+  <button class="burger-menu" aria-label="Menú" aria-expanded="false">
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+  </button>
+
+
+ <nav class="nav">
+  <a href="index.html">Inicio</a>
+  <a href="#ofertas">Ofertas</a>
+  <a href="#contacto">Contacto</a>
+  <!-- <a href="login.php"><i class="fa-solid fa-user"></i></a> -->
+</nav>
+  </header>
+
+  <section class="hero">
+    <h1>Descubrí los mejores dispositivos</h1>
+    <p>Celulares de última generación, calidad y precio imbatible</p>
+    <input type="text" id="searchInput" placeholder="Buscar dispositivo...">
+    <a href="#productos" class="btn-cta">Ver productos</a>
+  </section>
+
+  <button class="filter-button" onclick="toggleFilters()">Filtros</button>
+  
+  <section class="filters" id="filtersSection">
+    <div style="display: flex; flex-direction:row; text-align: center; ">
+      <label><input type="checkbox" value="IphoneX"> iPhone X</label>
+      <label><input type="checkbox" value="Iphone11"> iPhone 11</label>
+      <label><input type="checkbox" value="Iphone12"> iPhone 12</label>
+      <label><input type="checkbox" value="Iphone13"> iPhone 13</label>
+      <label><input type="checkbox" value="Iphone14"> iPhone 14</label>
+      <label><input type="checkbox" value="Iphone15"> iPhone 15</label>
+      <!-- Botón para resetear los filtros -->
+    </div>
+    <div style="display: flex; justify-content: center;"><button onclick="resetFilters()">Resetear Filtros</button>
+    </div>
+  </section>
+  
+  <section class="products-container" id="productsContainer"></section>
+  <div id="product-container"></div>
+    <!-- Productos se insertan dinámicamente -->
+
+  <footer id="contacto" class="footer">
+    <p>📍 Córdoba, Argentina - © 2025 Cellstore </p>
+    <!-- <a href="https://wa.me/543548554840" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a> -->
+  
+  
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=543548554840&text=Hola%20me%20interesa%20saber%20sobre%20un%20siguiente%20producto%20%22producto%22">
+      <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+    </a>
+
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
