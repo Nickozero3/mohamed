@@ -33,6 +33,7 @@ function renderProducts(arr) {
     loadMoreButton.className = 'btn-cta';
     loadMoreButton.textContent = 'Ver más';
     loadMoreButton.style.margin = '20px auto';
+    loadMoreButton.style.whiteSpace = 'nowrap';
     loadMoreButton.addEventListener('click', () => {
       currentPage++;
       renderProducts(arr);
