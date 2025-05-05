@@ -257,7 +257,7 @@ body.menu-open {
   gap: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   input#searchInput {
     width: 50%;
     margin: 0;
