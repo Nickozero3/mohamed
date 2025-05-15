@@ -34,13 +34,12 @@ body {
   }
   
   
-  .hero input {
+  /* .hero input {
     margin: 1rem 0;
     padding: 0.6rem;
     width: 80%;
     max-width: 400px;
-  }
-  
+  } */ 
   .btn-cta {
     background: #00d4ff;
     padding: 0.7rem 1.5rem;
