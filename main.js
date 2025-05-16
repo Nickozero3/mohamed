@@ -70,6 +70,11 @@ if (checkboxes.length) {
   checkboxes.forEach((cb) => cb.addEventListener("change", filterProducts));
   searchInput.addEventListener("input", filterProducts);
 }
+function irAProductos() {
+  const search = document.getElementById('searchInput').value.trim();
+  const encodedSearch = encodeURIComponent(search);
+  window.location.href = `productos.html?busqueda=${encodedSearch}`;
+}
 
 function renderRandomProducts() {
   if (!productListContainer) return; // solo corre en index.html

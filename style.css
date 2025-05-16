@@ -46,12 +46,12 @@ body {
     max-width: 400px;
   }
   
-  /* .hero input {
+  .hero input {
     margin: 1rem 0;
     padding: 0.6rem;
     grid: 1;
     max-width: 400px;
-  } */ 
+  }
   .btn-cta {
     background: #c5c5c5;
     padding: 0.7rem 1.5rem;
@@ -71,7 +71,7 @@ body {
   
   .products-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     padding: 1rem;
   }
@@ -268,17 +268,7 @@ body.menu-open {
   gap: 1rem;
 }
 
-@media (max-width: 1024px) {
-  input#searchInput {
-    width: 100%;
-    margin: 0;
-  }
-  
-  div .btn-cta {
-    margin: 10%;
-    max-width: 25%;
-  }
-}
+
 
 /* boton whatsapp */
 .whatsapp-float {
@@ -323,6 +313,64 @@ body.menu-open {
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 1200px) {
+  .hero {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .hero {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .filters {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .product-card {
+    max-width: calc(100% - 20px);
+    margin: 10px auto;
+  }
+  input#searchInput {
+    width: 100%;
+    margin: 0;
+    min-height: 25px;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+  }
+  
+  div .btn-cta {
+    margin: 10%;
+    max-width: 25%;
+  }
+}
 
 @media (max-width: 768px) {
   .whatsapp-float {
@@ -356,7 +404,7 @@ body.menu-open {
 .btn-cta {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #007bff;
+    background-color: #747474;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -366,7 +414,7 @@ body.menu-open {
 }
 
 .btn-cta:hover {
-    background-color: #0056b3;
+    background-color: rgba(141, 140, 140, 0.932);
 }
 
 /* Media queries para pantallas más grandes */

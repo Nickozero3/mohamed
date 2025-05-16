@@ -14,8 +14,12 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
-        <i class="fab fa-apple" style="font-size: 32px;"></i>
+      <a
+        href="index.html"
+        class="logo"
+        style="text-decoration: none; color: inherit"
+      >
+        <i class="fab fa-apple" style="font-size: 32px"></i>
         <span class="mi-texto">Cellstore</span>
       </a>
 
@@ -26,36 +30,49 @@
         <span class="burger-line"></span>
       </button>
 
- <nav class="nav">
-  <a href="productos.html">Productos</a>
-  <a href="#ofertas">Ofertas</a>
-  <a href="#contacto">Contacto</a>
-  <!-- <a href="login.php"><i class="fa-solid fa-user"></i></a> -->
-</nav>
-  </header>
-  
-  <section class="hero">
-    <h1>Descubrí los mejores dispositivos</h1>
-    <p>Celulares de última generación, calidad y precio imbatible</p>
-    <input type="text" id="searchInput" placeholder="Buscar dispositivo...">
-    <a href="#productos" class="btn-cta">Ver productos</a>
-  </section>
-  <div>
-    <span class="nov">Novedades</span>
-     <div id="product-container">Cargando productos...</div>
-</div>
- 
+      <nav class="nav">
+        <a href="productos.html">Productos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+        <!-- <a href="login.php"><i class="fa-solid fa-user"></i></a> -->
+      </nav>
+    </header>
 
-  <footer id="contacto" class="footer">
-    <p>📍 Córdoba, Argentina - © 2025 Cellstore </p>
-    <!-- <a href="https://wa.me/543548554840" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a> -->
-  
-    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-    <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=543548554840&text=Hola%20me%20interesa%20saber%20sobre%20un%20siguiente%20producto%20%22producto%22">
-      <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
-    </a>
+    <section class="hero">
+      <h1>Desc ubrí los mejores dispositivos</h1>
+      <p>Celulares de última generación, calidad y precio imbatible</p>
+      <div>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar dispositivo..."
+        />
+        <a href="#" class="btn-cta" onclick="irAProductos()">Ver productos</a>
+      </div>
+    </section>
+    <div>
+      <span class="nov">Novedades</span>
+      <div id="product-container">Cargando productos...</div>
+    </div>
 
-  </footer>
+    <footer id="contacto" class="footer">
+      <p>📍 Córdoba, Argentina - © 2025 Cellstore</p>
+      <!-- <a href="https://wa.me/543548554840" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a> -->
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css"
+      />
+      <a
+        id="robbu-whatsapp-button"
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=543548554840&text=Hola%20me%20interesa%20saber%20sobre%20un%20siguiente%20producto%20%22producto%22"
+      >
+        <img
+          src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"
+        />
+      </a>
+    </footer>
 
     <script type="module" src="main.js"></script>
   </body>
