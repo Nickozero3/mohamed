@@ -150,7 +150,7 @@ const productsData = [ {
       img: "./img/iphone15ProMaxB.jpg",
     }, {
       id: 23,
-      name: "Mp5 Gel",
+      name: "Arma Gel (mp5)",
       category: "Juguetes",
       storage: "hidrogel",
       img: "./img/gelmp5.jpg",
