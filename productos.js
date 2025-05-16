@@ -153,7 +153,7 @@ const productsData = [ {
       name: "Mp5 Gel",
       category: "Juguetes",
       storage: "hidrogel",
-      img: "./img/mp5gel.jpg",
+      img: "./img/gelmp5.jpg",
     },
 ];
 
