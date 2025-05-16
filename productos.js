@@ -148,6 +148,12 @@ const productsData = [ {
       category: "Iphone15",
       storage: "128 GB",
       img: "./img/iphone15ProMaxB.jpg",
+    }, {
+      id: 23,
+      name: "Mp5 Gel",
+      category: "Juguetes",
+      storage: "hidrogel",
+      img: "./img/mp5gel.jpg",
     },
 ];
 
