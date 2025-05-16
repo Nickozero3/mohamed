@@ -31,13 +31,25 @@ body {
     color: white;
     padding: 4rem 2rem;
     text-align: center;
+    display: grid;
+    grid-column: 1;
+    justify-content: center;
+    justify-items: center;
+
   }
-  
+  .cont{
+    display: grid;
+    grid-column: 1;
+    place-content: center;
+    grid-template-columns: repeat(1,auto);
+    min-height: 100px;
+    max-width: 400px;
+  }
   
   .hero input {
     margin: 1rem 0;
     padding: 0.6rem;
-    width: 80%;
+    grid: 1;
     max-width: 400px;
   }
   
@@ -46,6 +58,7 @@ body {
     padding: 0.7rem 1.5rem;
     border-radius: 4px;
     color: black;
+    max-width: 250px;
     text-decoration: none;
   }
   
@@ -258,10 +271,14 @@ body.menu-open {
 
 @media (max-width: 1024px) {
   input#searchInput {
-    width: 50%;
+    width: 100%;
     margin: 0;
   }
   
+  div .btn-cta {
+    margin: 10%;
+    max-width: 25%;
+  }
 }
 
 /* boton whatsapp */
