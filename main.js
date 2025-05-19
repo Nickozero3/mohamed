@@ -161,6 +161,8 @@ function toggleMenu(burgerButton, navMenu) {
   
   // Bloquear/desbloquear el scroll del body
   document.body.classList.toggle("menu-open", !isExpanded);
+  document.body.style.position = !isExpanded ? "fixed" : "static"; // Fija el body
+
 }
 function setupNavLinks(burgerButton, navMenu) {
   const navLinks = document.querySelectorAll(".nav a");
@@ -172,4 +174,7 @@ function setupNavLinks(burgerButton, navMenu) {
 function closeMenu(burgerButton, navMenu) {
   burgerButton.setAttribute("aria-expanded", "false");
   navMenu.classList.remove("active");
+    // Restaurar scroll al cerrar
+  document.body.style.overflow = "auto";
+  document.body.style.position = "static";
 }
