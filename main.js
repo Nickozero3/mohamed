@@ -76,6 +76,12 @@ function irAProductos() {
   window.location.href = `productos.html?busqueda=${encodedSearch}`;
 }
 
+function searchProducts() {
+  const search = document.getElementById("searchInput").value.trim();
+  const encodedSearch = encodeURIComponent(search);
+  window.location.href = `productos.html?busqueda=${encodedSearch}`;
+}
+
 function renderRandomProducts() {
   if (!productListContainer) return; // solo corre en index.html
 
@@ -148,13 +154,14 @@ function initBurgerMenu() {
   );
   setupNavLinks(burgerButton, navMenu);
 }
-
 function toggleMenu(burgerButton, navMenu) {
   const isExpanded = burgerButton.getAttribute("aria-expanded") === "true";
   burgerButton.setAttribute("aria-expanded", !isExpanded);
   navMenu.classList.toggle("active");
+  
+  // Bloquear/desbloquear el scroll del body
+  document.body.classList.toggle("menu-open", !isExpanded);
 }
-
 function setupNavLinks(burgerButton, navMenu) {
   const navLinks = document.querySelectorAll(".nav a");
   navLinks.forEach((link) => {
